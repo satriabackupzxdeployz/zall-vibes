@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izall Private Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    
+    <div id="login-screen" class="overlay">
+        <div class="glass-card login-box">
+            <h2>Welcome Sirr!</h2>
+            <p>Masukkan password untuk masuk</p>
+            <input type="password" id="passwordInput" placeholder="Password...">
+            <button onclick="checkPassword()">Unlock Website 🔓</button>
+            <p id="error-msg">Password Salah! ❌</p>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <div class="floating-icons">
+            <span class="icon">🚀</span>
+            <span class="icon">✨</span>
+            <span class="icon">🥾</span>
+        </div>
+
+        <nav>
+            <div class="logo">zall.<span>dev</span></div>
+        </nav>
+
+        <div class="container">
+            <section class="hero">
+                <h1>Halo, Saya Alvin</h1>
+                <a href="https://instagram.com/ur.izall.exe_" target="_blank" class="ig-link">
+                    📸 @ur.izall.exe_
+                </a>
+                <p class="hero-desc">Web Enthusiast | Hiking | Swimmer</p>
+            </section>
+
+            <div class="grid-info">
+                <div class="glass-card info-box">
+                    <h3>My Skills ⚡</h3>
+                    <ul>
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Modern UI Design</li>
+                    </ul>
+                </div>
+                <div class="glass-card info-box">
+                    <h3>Hobbies 🥾</h3>
+                    <ul>
+                        <li>Hiking</li>
+                        <li>Swimming</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="section-title">Gallery Owner 📸</h2>
+            <div class="gallery">
+                <div class="photo-card"><img src="izall1.jpg" alt="Izall 1"></div>
+                <div class="photo-card"><img src="izall2.jpg" alt="Izall 2"></div>
+                <div class="photo-card"><img src="izall3.jpg" alt="Izall 3"></div>
+                <div class="photo-card"><img src="izall4.jpg" alt="Izall 4"></div>
+            </div>
+
+            <section class="message-section">
+                <h2 class="section-title">Titip Pesan ke IG ✨</h2>
+                <div class="glass-card message-form">
+                    <div class="input-group">
+                        <input type="text" id="fromInput" placeholder="Nama Kamu...">
+                        <input type="text" value="Untuk: @ur.izall.exe_" readonly>
+                    </div>
+                    <textarea id="msgInput" placeholder="Tulis pesan kamu di sini..."></textarea>
+                    <button onclick="kirimKeIG()">Kirim & Chat Instagram 💌</button>
+                </div>
+                <div id="messageDisplay" class="message-grid"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
